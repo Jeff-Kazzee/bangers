@@ -1,6 +1,6 @@
 <h1 align="center">🔥 BANGERS</h1>
 <p align="center"><b>Turn one idea into scroll-stopping content across every platform.</b></p>
-<p align="center">A social-media content studio for creators — built on the reverse-engineered playbooks of <b>Fireship</b>, <b>Matt Pocock</b>, <b>Theo</b>, and <b>ThePrimeagen</b>, and adaptable to <i>any</i> niche.</p>
+<p align="center">A social-media content studio for creators — built on the reverse-engineered playbooks of <b>Matt Pocock</b>, <b>Theo</b>, and <b>ThePrimeagen</b>, and adaptable to <i>any</i> niche.</p>
 
 <p align="center">
 <a href="#install">Install</a> · <a href="#the-skills">Skills</a> · <a href="#how-it-works">How it works</a> · <a href="#make-it-yours">Make it yours</a> · <a href="#license">License</a>
@@ -12,7 +12,7 @@
 
 BANGERS is a plugin for [Claude](https://claude.com/claude-code) (Cowork & Claude Code) that turns you into a content machine. You describe what you want — "give me 10 video ideas," "write a YouTube script on X," "turn this video into posts for everything" — and the right skill fires, using deep playbooks of how the best creators alive actually make things.
 
-The insight behind it: four of the sharpest creators on the internet — Fireship (density + deadpan comedy), Matt Pocock (teach one thing, show don't tell), Theo (react + defensible hot takes), and ThePrimeagen (manufactured energy + the clip funnel) — all run the *same underlying machine*. BANGERS extracts that machine, keeps the mechanics, and lets you point them at **your** audience, whatever niche you're in.
+The insight behind it: four of the sharpest creators on the internet — Matt Pocock (teach one thing, show don't tell), Theo (react + defensible hot takes), and ThePrimeagen (manufactured energy + the clip funnel) — all run the *same underlying machine*. BANGERS extracts that machine, keeps the mechanics, and lets you point them at **your** audience, whatever niche you're in.
 
 You keep their moves. You swap the fuel. You make bangers.
 
@@ -39,7 +39,7 @@ YouTube (long-form + Shorts) · TikTok · Instagram (Reels + Carousels) · X/Twi
 
 Under the hood is a reference library every skill reads — the real asset:
 
-- **`references/creators/`** — full reverse-engineered playbooks for Fireship, Matt Pocock, Theo, and ThePrimeagen, plus `_synthesis.md` (the 10 laws they all share).
+- **`references/creators/`** — full reverse-engineered playbooks for Matt Pocock, Theo, and ThePrimeagen, plus `_synthesis.md` (the 10 laws they all share).
 - **`references/platforms/platform-playbook.md`** — current specs + algorithm rules for all 9 platforms, plus the cross-platform "film once, cut everywhere" repurposing waterfall.
 - **`references/frameworks/voice-and-audience.md`** — the translation layer. Define who *your* audience is, and the whole suite adapts the creators' mechanics to them.
 - **`references/frameworks/hooks-bank.md`** — a swipe file of hook, title, and thumbnail patterns.
@@ -75,7 +75,7 @@ BANGERS ships niche-agnostic. To lock it to your audience, open `references/fram
 
 ## Credit & inspiration
 
-The techniques here are studied from the public work of [Fireship](https://www.youtube.com/@Fireship), [Matt Pocock](https://www.mattpocock.com/), [Theo](https://www.youtube.com/@t3dotgg), and [ThePrimeagen](https://www.youtube.com/@ThePrimeagen). BANGERS is an independent, unaffiliated homage — go watch them, they're the real deal. Nothing here reproduces their content; it distills publicly-documented *methods* into a reusable toolkit.
+The techniques here are studied from the public work of[Matt Pocock](https://www.mattpocock.com/), [Theo](https://www.youtube.com/@t3dotgg), and [ThePrimeagen](https://www.youtube.com/@ThePrimeagen). BANGERS is an independent, unaffiliated homage — go watch them, they're the real deal. Nothing here reproduces their content; it distills publicly-documented *methods* into a reusable toolkit.
 
 ## License
 
