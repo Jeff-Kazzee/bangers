@@ -10,7 +10,24 @@ If you don't already know who this creator serves, **ask them once at the start 
 4. **How sophisticated are they?** (total beginner ↔ practitioner ↔ expert — this drives every vocabulary decision below)
 5. **What do they respond to?** (proof? humor? authority? relatability? "you can do this" warmth? spicy takes?)
 
-If the creator can't answer crisply, help them: "describe one real person who follows you." A vivid single person beats a vague demographic. If answers are unavailable, state the assumption you're making and proceed — never silently guess.
+If the creator cannot answer crisply, help them describe one real person who follows them. A vivid single person beats a vague demographic. If answers are unavailable, state the assumption and proceed. Never silently guess.
+
+## Step 2: Record hard creator constraints
+
+Store these beside the audience profile so every writing route can enforce them:
+
+```yaml
+creator_name: ""
+recent_approved_samples: []
+punctuation_bans: []
+prohibited_phrases: []
+required_tone: []
+forbidden_tone: []
+detector_mode: "off" # off | requested | panel
+private_overlay_path: ""
+```
+
+`punctuation_bans` and `prohibited_phrases` are automatic failures. `detector_mode: panel` requires the detector workflow in `writing-quality.md` when accessible. Keep private values in a local overlay rather than this public template.
 
 ## THE PRIME DIRECTIVE
 **Match vocabulary to the audience's ACTUAL sophistication — it cuts both ways.**

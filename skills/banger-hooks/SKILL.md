@@ -8,7 +8,7 @@ description: >
   Part of the BANGERS suite. Packaging (hook + title + thumbnail) often decides whether content is ever
   seen, so reach for this skill aggressively any time the opening or packaging of a piece is in play.
 metadata:
-  version: "0.1.0"
+  version: "0.2.0"
   suite: "bangers"
 ---
 
@@ -16,6 +16,9 @@ metadata:
 
 Packaging is a separate craft from the content, and it usually decides whether the content is seen at all (Theo: "obsess over whether the packaging makes it worth clicking"). A hook's only job is to buy the next 3 seconds. A title/thumbnail's only job is to earn the click — honestly.
 
+## Freshness gate
+
+Before applying a platform benchmark, algorithm claim, policy, feature-availability statement, or numeric performance claim from this skill or the platform playbook, check `references/research/source-ledger.md` for non-expired support. If support is missing or past its review date, run `banger-research`, qualify the claim as unverified, or omit it. Never present a legacy value as current truth.
 ## Load the swipe file first
 Read `${CLAUDE_PLUGIN_ROOT}/references/frameworks/hooks-bank.md` (the hook engines, fill-in templates, title patterns, thumbnail rules) and `${CLAUDE_PLUGIN_ROOT}/references/frameworks/voice-and-audience.md` (the creator's own defined audience and voice — ask once if it isn't set — so hooks invite that audience instead of intimidating them). For platform-specific opening rules (what "the first 3 seconds" means per surface), see `${CLAUDE_PLUGIN_ROOT}/references/platforms/platform-playbook.md`.
 
@@ -39,5 +42,8 @@ Give 2–3 distinct thumbnail directions with the exact words + the visual + why
 ## Output format
 Group as: **Hooks** (5–10 options, labeled by engine) · **Titles** (5–8 options) · **Thumbnail concepts** (2–3 directions). End by recommending one hook + one title + one thumbnail as your top pairing, and note that the title and thumbnail should NOT say the same thing. If the piece is going to multiple platforms, remind the user each surface needs its own opening (hand to `banger-repurpose`).
 
+## Living writing gate
+
+Read `${CLAUDE_PLUGIN_ROOT}/references/frameworks/writing-quality.md` before drafting. Apply creator-specific constraints and treat detector results as weak evidence.
 ## Quality bar
 Every hook must pass the hook checklist in the swipe file: works in the first 3 seconds/line alone, one clear reason to continue, specific not vague, actually paid off by the content, and inviting (not intimidating) to the audience.

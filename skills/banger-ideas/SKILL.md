@@ -9,7 +9,7 @@ description: >
   Part of the BANGERS social-media suite; applies the idea-selection tactics of Fireship, Theo,
   ThePrimeagen and Matt Pocock, adaptable to any creator's niche.
 metadata:
-  version: "0.1.0"
+  version: "0.2.0"
   suite: "bangers"
 ---
 
@@ -17,6 +17,9 @@ metadata:
 
 Your job: turn a vague creator into a list of specific, high-potential content ideas they can actually shoot, each with a hook and a home platform. Ideas are cheap; GOOD ideas that ride existing attention and teach one real thing are the whole game.
 
+## Freshness gate
+
+Before applying a platform benchmark, algorithm claim, policy, feature-availability statement, or numeric performance claim from this skill or the platform playbook, check `references/research/source-ledger.md` for non-expired support. If support is missing or past its review date, run `banger-research`, qualify the claim as unverified, or omit it. Never present a legacy value as current truth.
 ## Before anything: load the playbooks
 Read these once at the start of a session so every idea inherits the right instincts:
 - `${CLAUDE_PLUGIN_ROOT}/references/frameworks/voice-and-audience.md` — WHO the creator's audience is and how to talk to them. This file holds the creator's OWN defined niche and audience, and it is the filter for every idea.
@@ -46,5 +49,8 @@ Then flag your top 3 picks with one sentence on why they're the strongest bets.
 
 If the user wants a **content calendar**, group the ideas across the week/month, balance evergreen vs trend-jacked (Fireship's two-track), and respect each platform's cadence from the platform playbook (e.g. YouTube ~1–2/week, Shorts/TikTok ~daily, LinkedIn 3–5/week). Note that one strong source idea should be repurposed across platforms rather than inventing separate ideas for each — hand off to `banger-repurpose` for the waterfall.
 
+## Living writing gate
+
+Read `${CLAUDE_PLUGIN_ROOT}/references/frameworks/writing-quality.md` before drafting. Apply creator-specific constraints and treat detector results as weak evidence.
 ## Quality bar
 Before presenting, cut any idea that: is vague, has no clear audience payoff, rides no attention and isn't evergreen-fundamental, or that the intended audience would find intimidating or irrelevant. A short list of specific bangers beats a long list of mush.

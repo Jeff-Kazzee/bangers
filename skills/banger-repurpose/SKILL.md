@@ -8,7 +8,7 @@ description: >
   idea) and wants it adapted across YouTube, Shorts, TikTok, Instagram, X, LinkedIn, Substack, Bluesky, and
   Facebook Groups. Part of the BANGERS suite; the orchestrator that routes work to the other banger skills.
 metadata:
-  version: "0.1.0"
+  version: "0.2.0"
   suite: "bangers"
 ---
 
@@ -16,6 +16,9 @@ metadata:
 
 The 2025–2026 rule is: **stop cross-posting, start repurposing.** The same file everywhere trips duplicate-detection and throttles reach (up to ~42% Reels cut for duplicates, ~72% with a visible watermark). Deriving platform-native variants from one source does not. This skill is the orchestrator: it takes one source asset and produces a tailored package for every platform the user wants, delegating to the other BANGERS skills.
 
+## Freshness gate
+
+Before applying a platform benchmark, algorithm claim, policy, feature-availability statement, or numeric performance claim from this skill or the platform playbook, check `references/research/source-ledger.md` for non-expired support. If support is missing or past its review date, run `banger-research`, qualify the claim as unverified, or omit it. Never present a legacy value as current truth.
 ## Load first
 - `${CLAUDE_PLUGIN_ROOT}/references/platforms/platform-playbook.md` §10 (the waterfall + native-vs-cross-post rules) and the per-platform sections for whichever targets are chosen.
 - `${CLAUDE_PLUGIN_ROOT}/references/creators/_synthesis.md` (produce one rich source, then atomize) + `${CLAUDE_PLUGIN_ROOT}/references/frameworks/voice-and-audience.md` (the creator's own defined audience — ask once if it isn't set).
@@ -45,5 +48,8 @@ Produce, from the one source:
 ## Output format
 Deliver an organized package, grouped by platform, each with the ready-to-use asset (script/post/caption) + its specs + posting note. Lead with a short **repurposing map** (source → this many clips + these posts) so the user sees the whole plan at a glance. Flag anything that still needs the user (footage to shoot, a screenshot to grab). If the package is large, offer to write each platform's assets to files and deliver them.
 
+## Living writing gate
+
+Read `${CLAUDE_PLUGIN_ROOT}/references/frameworks/writing-quality.md` before drafting. Apply creator-specific constraints and treat detector results as weak evidence.
 ## Quality bar
 Confirm every platform variant is genuinely native (own hook/first-frame/audio/text container), the watermark rule is stated, publishing is staggered, and nothing is a lazy identical cross-post.

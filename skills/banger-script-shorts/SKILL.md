@@ -8,7 +8,7 @@ description: >
   discipline all four reference creators share, adaptable to any creator's niche. Reach for this any time
   the deliverable is a short vertical video.
 metadata:
-  version: "0.1.0"
+  version: "0.2.0"
   suite: "bangers"
 ---
 
@@ -16,6 +16,9 @@ metadata:
 
 Short-form lives or dies in the first 1–3 seconds (a weak open = swipe-away = the algorithm stops pushing it). Every word earns the next. Design for muted autoplay, for the loop, and for one single takeaway.
 
+## Freshness gate
+
+Before applying a platform benchmark, algorithm claim, policy, feature-availability statement, or numeric performance claim from this skill or the platform playbook, check `references/research/source-ledger.md` for non-expired support. If support is missing or past its review date, run `banger-research`, qualify the claim as unverified, or omit it. Never present a legacy value as current truth.
 ## Load first
 - `${CLAUDE_PLUGIN_ROOT}/references/frameworks/voice-and-audience.md` (the creator's own defined audience — ask once if it isn't set) + `${CLAUDE_PLUGIN_ROOT}/references/frameworks/hooks-bank.md` (the opener).
 - `${CLAUDE_PLUGIN_ROOT}/references/creators/fireship.md` (density / no dead air) + `${CLAUDE_PLUGIN_ROOT}/references/creators/matt-pocock.md` (one concept, show-don't-tell).
@@ -43,5 +46,8 @@ For each Short, deliver:
 - **LOOP NOTE** — how the end connects back to the start.
 If producing for multiple platforms, give each its own hook/first-frame and caption (don't ship one file everywhere — duplicate detection weights the first ~0.5s). Batch: offer to generate 3–5 variants from one idea.
 
+## Living writing gate
+
+Read `${CLAUDE_PLUGIN_ROOT}/references/frameworks/writing-quality.md` before drafting. Apply creator-specific constraints and treat detector results as weak evidence.
 ## Quality bar
 Confirm the hook works in 3 seconds with sound off, the Short teaches/reveals exactly one thing, text sits inside the safe zone, and it loops. If it drags, cut it shorter.

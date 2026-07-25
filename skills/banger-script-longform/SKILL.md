@@ -9,7 +9,7 @@ description: >
   reaction-and-verdict energy, adaptable to any creator's niche. Reach for this any time the deliverable
   is a spoken script longer than ~90 seconds.
 metadata:
-  version: "0.1.0"
+  version: "0.2.0"
   suite: "bangers"
 ---
 
@@ -17,6 +17,9 @@ metadata:
 
 Deliver a complete, ready-to-record script: hook, body beats, spoken narration, visual/B-roll cues, and a sign-off — structured so people actually keep watching. YouTube now ranks on satisfaction and session contribution, not raw minutes, so every section must earn the next.
 
+## Freshness gate
+
+Before applying a platform benchmark, algorithm claim, policy, feature-availability statement, or numeric performance claim from this skill or the platform playbook, check `references/research/source-ledger.md` for non-expired support. If support is missing or past its review date, run `banger-research`, qualify the claim as unverified, or omit it. Never present a legacy value as current truth.
 ## Load first
 - `${CLAUDE_PLUGIN_ROOT}/references/creators/_synthesis.md` and `${CLAUDE_PLUGIN_ROOT}/references/frameworks/voice-and-audience.md` — the shared laws + the creator's own defined audience and voice (ask once if it isn't set).
 - Match the format to the video type:
@@ -46,5 +49,8 @@ Produce the script as a two-column-style layout in prose: for each section, a he
 - A one-line note on which moments will make the best Short cutdowns (hand to `banger-script-shorts` / `banger-repurpose`).
 - Target length + estimated word count (~150 words/min narrated).
 
+## Living writing gate
+
+Read `${CLAUDE_PLUGIN_ROOT}/references/frameworks/writing-quality.md` before drafting. Apply creator-specific constraints and treat detector results as weak evidence.
 ## Quality bar
 Check against the retention benchmarks in the platform playbook for the target length, confirm the hook contains no intro/filler, confirm every beat teaches or reveals one clear thing, and confirm the video pays off its opening promise (no clickbait debt).

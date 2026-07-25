@@ -8,7 +8,7 @@ description: >
   applies the teaching clarity and story-led hooks of the reference creators, adaptable to any creator's
   niche. Reach for this for any written post destined for LinkedIn, Substack, or a Facebook Group.
 metadata:
-  version: "0.1.0"
+  version: "0.2.0"
   suite: "bangers"
 ---
 
@@ -16,6 +16,9 @@ metadata:
 
 Each of these platforms rewards something different: LinkedIn rewards dwell time + saves/shares on a narrow topic; Substack rewards restack-worthy standalone ideas + a consistent owned-audience relationship; Facebook Groups reward early comments and native, un-linked content. Write to the surface.
 
+## Freshness gate
+
+Before applying a platform benchmark, algorithm claim, policy, feature-availability statement, or numeric performance claim from this skill or the platform playbook, check `references/research/source-ledger.md` for non-expired support. If support is missing or past its review date, run `banger-research`, qualify the claim as unverified, or omit it. Never present a legacy value as current truth.
 ## Load first
 - `${CLAUDE_PLUGIN_ROOT}/references/frameworks/voice-and-audience.md` (the creator's own defined audience — ask once if it isn't set) + `${CLAUDE_PLUGIN_ROOT}/references/creators/matt-pocock.md` (one clear idea, warm/low-ego, cast the reader as capable) + `${CLAUDE_PLUGIN_ROOT}/references/creators/_synthesis.md`.
 - `${CLAUDE_PLUGIN_ROOT}/references/platforms/platform-playbook.md` §6 (LinkedIn), §7 (Substack), §9 (Facebook Groups). Confirm the target platform — the rules diverge sharply.
@@ -41,5 +44,8 @@ Each of these platforms rewards something different: LinkedIn rewards dwell time
 ## Output format
 Deliver the finished post ready to paste, formatted for the target platform (line breaks and all). Include: the hook line called out, a note on where any link goes, the suggested first-comment/reply to seed the golden hour, and (Substack) the pull-out Notes + cover concept. If the user drafts these as themselves and a `my-writing-style` profile exists, draft from it; if they then correct the voice, offer once to save the change to their profile.
 
+## Living writing gate
+
+Read `${CLAUDE_PLUGIN_ROOT}/references/frameworks/writing-quality.md` before drafting. Apply creator-specific constraints and treat detector results as weak evidence.
 ## Quality bar
 Confirm the hook lands in the visible-before-cutoff zone, the post holds ONE idea, links are placed correctly for the platform, and there's a concrete reason to comment/restack/share.

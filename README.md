@@ -1,82 +1,80 @@
 <h1 align="center">🔥 BANGERS</h1>
-<p align="center"><b>Turn one idea into scroll-stopping content across every platform.</b></p>
-<p align="center">A social-media content studio for creators — built on the reverse-engineered playbooks of <b>Fireship</b>, <b>Matt Pocock</b>, <b>Theo</b>, and <b>ThePrimeagen</b>, and adaptable to <i>any</i> niche.</p>
+<p align="center"><b>A research-backed social-media system for turning real ideas into native content.</b></p>
+<p align="center">Study the mechanics. Keep your own voice. Publish with proof.</p>
 
-<p align="center">
-<a href="#install">Install</a> · <a href="#the-skills">Skills</a> · <a href="#how-it-works">How it works</a> · <a href="#make-it-yours">Make it yours</a> · <a href="#license">License</a>
-</p>
+## What is BANGERS?
 
----
+BANGERS is a Claude plugin and tool-neutral skill suite for creator research, ideas, hooks, scripts, written posts, carousels, edit plans, and platform-native repurposing. Its original playbooks study public work from Fireship, Matt Pocock, Theo, and ThePrimeagen. Its research loop can keep learning from other creators and current platform behavior without copying anyone's voice.
 
-## What is this?
-
-BANGERS is a plugin for [Claude](https://claude.com/claude-code) (Cowork & Claude Code) that turns you into a content machine. You describe what you want — "give me 10 video ideas," "write a YouTube script on X," "turn this video into posts for everything" — and the right skill fires, using deep playbooks of how the best creators alive actually make things.
-
-The insight behind it: four of the sharpest creators on the internet — Fireship (density + deadpan comedy), Matt Pocock (teach one thing, show don't tell), Theo (react + defensible hot takes), and ThePrimeagen (manufactured energy + the clip funnel) — all run the *same underlying machine*. BANGERS extracts that machine, keeps the mechanics, and lets you point them at **your** audience, whatever niche you're in.
-
-You keep their moves. You swap the fuel. You make bangers.
+BANGERS starts from a real source artifact, extracts one strong idea, adapts it to the target audience, and packages it for each platform. It includes a living writing-quality gate that catches generic AI-assisted prose while treating detector scores as weak evidence, not truth.
 
 ## The skills
 
-Just talk naturally — the matching skill triggers itself.
-
 | Skill | Use it for |
-|-------|-----------|
-| `banger-ideas` | "What should I post?" — ideas, angles, and a content calendar |
-| `banger-hooks` | Hooks, video titles, and thumbnail concepts (packaging) |
-| `banger-script-longform` | Full YouTube / long-form video scripts with a retention structure |
-| `banger-script-shorts` | Shorts / TikTok / Reels vertical scripts |
-| `banger-threads` | X / Twitter and Bluesky posts and threads |
-| `banger-longform-written` | LinkedIn posts, Substack newsletters, Facebook Group posts |
-| `banger-carousels` | Instagram + LinkedIn slide carousels and decks |
-| `banger-edit` | Cut sheets, SRT captions, marker CSVs, reframe & recording plans for **DaVinci Resolve, Premiere, CapCut, Descript & OBS** |
-| `banger-repurpose` | The orchestrator: one idea → a native package for all 9 platforms |
+| --- | --- |
+| `banger-research` | Research creators, formats, platforms, and writing patterns |
+| `banger-ideas` | Ideas, angles, and a content calendar |
+| `banger-hooks` | Hooks, titles, thumbnails, and packaging |
+| `banger-script-longform` | YouTube and long-form video scripts |
+| `banger-script-shorts` | Shorts, TikTok, and Reels scripts |
+| `banger-threads` | X, Twitter, and Bluesky posts and threads |
+| `banger-longform-written` | LinkedIn, Substack, newsletters, and Facebook Groups |
+| `banger-carousels` | Instagram and LinkedIn carousels |
+| `banger-edit` | Cut sheets, captions, markers, reframing, and recording plans |
+| `banger-repurpose` | One source adapted into a native multiplatform package |
 
-### Platforms covered
-YouTube (long-form + Shorts) · TikTok · Instagram (Reels + Carousels) · X/Twitter · LinkedIn · Substack · Bluesky · Facebook Groups.
+Platforms covered: YouTube, Shorts, TikTok, Instagram, X, LinkedIn, Substack, Bluesky, and Facebook Groups.
 
-## How it works
+## How the system learns
 
-Under the hood is a reference library every skill reads — the real asset:
+- `references/creators/` contains public creator playbooks and their shared mechanics.
+- `references/platforms/platform-playbook.md` contains platform guidance that should be reverified when it may have changed.
+- `references/research/creator-research-protocol.md` defines the evidence and adoption gate for new mechanics.
+- `references/research/source-ledger.md` records dated sources, confidence, and review dates. Missing or expired support triggers research before a platform claim is used.
+- `references/research/detector-runs.md` stores scrubbed detector receipts when the creator profile enables the panel.
+- `references/frameworks/voice-and-audience.md` adapts mechanics to the actual author and audience.
+- `references/frameworks/writing-quality.md` provides the human writing test and optional detector panel.
+- `references/frameworks/hooks-bank.md` contains reusable packaging patterns.
 
-- **`references/creators/`** — full reverse-engineered playbooks for Fireship, Matt Pocock, Theo, and ThePrimeagen, plus `_synthesis.md` (the 10 laws they all share).
-- **`references/platforms/platform-playbook.md`** — current specs + algorithm rules for all 9 platforms, plus the cross-platform "film once, cut everywhere" repurposing waterfall.
-- **`references/frameworks/voice-and-audience.md`** — the translation layer. Define who *your* audience is, and the whole suite adapts the creators' mechanics to them.
-- **`references/frameworks/hooks-bank.md`** — a swipe file of hook, title, and thumbnail patterns.
-
-Every skill follows the same shape: load the relevant playbooks → apply the method → deliver a ready-to-use asset → check it against a quality bar drawn from how the pros actually work.
+A successful post is evidence to inspect, not a universal law. New mechanics need repeated examples or an experimental label, a counterexample, a real test, and a bounded playbook change.
 
 ## Install
 
-**As a Claude Code plugin marketplace:**
+Claude Code marketplace:
 
-```
+```text
 /plugin marketplace add Jeff-Kazzee/bangers
 /plugin install bangers
 ```
 
-**In Cowork:** download the packaged `bangers.plugin` from the [Releases](https://github.com/Jeff-Kazzee/bangers/releases) page (or build it yourself, below) and open it in the Claude desktop app to install.
+Or clone the repository and use its root `SKILL.md` as the tool-neutral router:
 
-**Or just clone it** and drop the `skills/` and `references/` into your own project or `~/.claude/`:
-
-```
+```text
 git clone https://github.com/Jeff-Kazzee/bangers.git
 ```
 
-**Build the `.plugin` yourself:**
-
-```
-cd bangers && zip -r bangers.plugin . -x "*.git*" "*.DS_Store"
-```
+In Cowork, install a packaged `bangers.plugin` from the Releases page or build it from this repository.
 
 ## Make it yours
 
-BANGERS ships niche-agnostic. To lock it to your audience, open `references/frameworks/voice-and-audience.md` and fill in the five-question audience profile at the top — every skill reads it. Want a different swipe file or creator emphasis? Edit `references/frameworks/hooks-bank.md` and the creator playbooks. It's all plain markdown.
+Fill in `references/frameworks/voice-and-audience.md` with the actual author, audience, and constraints. Creator-specific hard rules override generic style advice. Keep private identity, business, client, health, and financial context in a local overlay rather than committing it to this public repository.
 
-## Credit & inspiration
+See `DISTRIBUTION.md` for public source ownership and private-overlay boundaries.
 
-The techniques here are studied from the public work of [Fireship](https://www.youtube.com/@Fireship), [Matt Pocock](https://www.mattpocock.com/), [Theo](https://www.youtube.com/@t3dotgg), and [ThePrimeagen](https://www.youtube.com/@ThePrimeagen). BANGERS is an independent, unaffiliated homage — go watch them, they're the real deal. Nothing here reproduces their content; it distills publicly-documented *methods* into a reusable toolkit.
+## Writing check
+
+The deterministic checker reads UTF-8 files, flags a small set of common synthetic phrases, and can enforce a creator-specific em-dash ban. File input is required because Windows PowerShell pipes can replace punctuation before Node receives it:
+
+```text
+node scripts/check-writing.mjs --no-em-dash draft.md
+```
+
+The checker is a prompt for human review. It does not prove authorship or quality.
+
+## Credit
+
+The initial techniques were studied from public work by Fireship, Matt Pocock, Theo, and ThePrimeagen. BANGERS is independent and unaffiliated. It distills reusable methods and does not reproduce their content or voices.
 
 ## License
 
-[MIT](./LICENSE) © 2026 Jeff Kazzee. Use it, fork it, sell what you make with it. Make bangers.
+MIT © 2026 Jeff Kazzee.
