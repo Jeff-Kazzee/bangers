@@ -106,9 +106,39 @@ From "Politics and the English Language" (1946), paraphrased:
 5. Never use jargon when everyday English works.
 6. Break any of these rules before writing something barbarous.
 
-## Kill-list for teaching content
+## Kill-list: applies to the WHOLE document, frame included
 
-These tells hit hardest here, because the reader is already working:
+The payload discipline above governs only the payload. This kill-list governs
+everything, voice sections included. Do not skip it on the frame because the
+frame is "yours". The frame is exactly where these creep back in, because it is
+the part no length rule is watching.
+
+### Frame-specific tells
+
+These are the ones that survive a clean payload and still make a piece read as
+machine-written:
+
+- **Closer cadence.** Every section ending on a short, quotable, self-satisfied
+  line. One or two landings in a piece is voice. Landing every single section is
+  the single loudest tell there is, and it is the one writers miss, because each
+  line looks good alone. Check the last sentence of every section in a column.
+  If they all punch, flatten most of them. Let sections end mid-thought, on a
+  qualifier, or on an ordinary sentence.
+- **Significance flagging.** "That is the whole trap", "this is the part I would
+  keep", "if you take one thing from this", "that is the whole trick". Telling
+  the reader what matters instead of letting the writing carry it. Cut every
+  instance.
+- **Manufactured symmetry.** "I did not have an X problem. I had a Y problem."
+  Reads clever, teaches nothing the plain sentence would not.
+- **Too clean an arc.** Real accounts have loose ends. If nothing in the piece is
+  unresolved, uncertain, or admitted-to-be-still-wrong, it was probably smoothed
+  by a model. Put the loose end back.
+- **Uniform paragraph length.** Three to four lines each, all the way down. Vary
+  it for real, driven by how much the thought needs.
+
+### General tells
+
+These hit hardest in teaching content, because the reader is already working:
 
 - Significance inflation: "plays a pivotal role", "underscores the
   importance", "a testament to", "the evolving landscape of".
@@ -130,6 +160,11 @@ These tells hit hardest here, because the reader is already working:
 - Does the frame still sound like the author, or did the discipline flatten
   the piece?
 - Would deleting any sentence lose information? If not, delete it.
+- **Read the last sentence of every section, in order, on their own.** If they
+  all land like punchlines, the piece reads as machine-written no matter how
+  good the payload is. Flatten most of them.
+- Is anything in the piece left genuinely unresolved? If not, you smoothed
+  something you should not have.
 
 A mechanical check catches the countable defects and nothing else. It will
 pass a clean, confident, hollow paragraph. It cannot tell you whether you had
