@@ -3,6 +3,33 @@
 Read this when the content teaches how something works. It sits between
 `voice-and-audience.md` (who is speaking) and `writing-quality.md` (what fails).
 
+## Where this came from
+
+This file is downstream of a public conversation on X in 2026, and the people
+who started it deserve the credit:
+
+- **[@geogristle](https://x.com/geogristle/status/2078492579511906771)** made
+  the original point: you can get LLMs to write technical documentation that
+  does not sound like AI by requiring them to follow ASD-STE100 Simplified
+  Technical English. Earliest of the three posts below.
+- **[@Voxyz_ai](https://x.com/Voxyz_ai/status/2078857039116156978)** made the
+  argument that matters most here: stop banning words one at a time, because
+  you never gave the model a writing system. Orwell's six rules from 1946 are
+  the base block.
+- **[@mikehostetler](https://x.com/mikehostetler/status/2079245119455150418)**
+  carried the STE answer further.
+- **[woosal1337](https://github.com/woosal1337/blog/tree/main/videos/ep01-the-cure-for-ai-slop)**
+  ran the cross-model experiment and published a linter and results, showing a
+  banned-word list barely moves the needle while a full writing system cuts
+  measured violations sharply.
+- **[danyuchn/asd-ste100-skill](https://github.com/danyuchn/asd-ste100-skill)**
+  published an ASD-STE100 Claude Code skill. This file is not the first of its
+  kind.
+
+What this file adds is the frame/payload split below, which is the part none of
+the sources address: what happens when you apply a controlled-language standard
+to writing that also has to carry a voice.
+
 Most technical content fails by applying one register to the whole piece. All
 voice and the explanation goes hand-wavy: the reader enjoys it and cannot
 repeat it. All specification and the piece reads like a manual: correct,
@@ -28,9 +55,12 @@ payload carries the middle. Adjust to the piece.
 ## Payload discipline
 
 Adapted from ASD-STE100 Simplified Technical English, a controlled-language
-standard built for aircraft maintenance documentation, where a misread
-instruction has a physical cost. The full standard is at
-https://www.asd-ste100.org/ and is free to download.
+standard for aircraft maintenance documentation. It exists because airlines
+asked for it: roughly 80% of them are not native English speakers, and per the
+standard's own documentation, complex technical instructions can be
+misunderstood, and misunderstandings can lead to accidents. Working group
+formed 1983, first released 1986 as the AECMA document, still maintained. The
+full standard is free at https://www.asd-ste100.org/.
 
 1. **One name per thing.** Choose the term on first use and never rotate it.
    If it is a "context file" in paragraph two, it is not a "memory doc" in

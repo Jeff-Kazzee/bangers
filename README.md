@@ -12,7 +12,7 @@
 
 BANGERS is a plugin for [Claude](https://claude.com/claude-code) (Claude Code and Cowork) and a tool-neutral skill suite. You describe what you want, such as "give me 10 video ideas", "write a YouTube script on X", or "turn this video into posts for everything", and the right skill fires.
 
-The insight behind it: three of the sharpest creators on the internet, [Matt Pocock](https://www.mattpocock.com/) (teach one thing, show don't tell), [Theo](https://www.youtube.com/@t3dotgg) (react with a defensible take), and [ThePrimeagen](https://www.youtube.com/@ThePrimeagen) (manufactured energy and the clip funnel), all run the *same underlying machine*. BANGERS extracts that machine, keeps the mechanics, and points them at **your** audience in whatever niche you're in.
+The insight behind it: four of the sharpest creators on the internet, [Fireship](https://www.youtube.com/@Fireship) (density and deadpan comedy), [Matt Pocock](https://www.mattpocock.com/) (teach one thing, show don't tell), [Theo](https://www.youtube.com/@t3dotgg) (react with a defensible take), and [ThePrimeagen](https://www.youtube.com/@ThePrimeagen) (manufactured energy and the clip funnel), all run the *same underlying machine*. BANGERS extracts that machine, keeps the mechanics, and points them at **your** audience in whatever niche you're in.
 
 You keep their moves. You swap the fuel. You make bangers.
 
@@ -41,13 +41,15 @@ Platforms covered: YouTube, Shorts, TikTok, Instagram, X, LinkedIn, Substack, Bl
 
 Two pieces of the suite exist because banning words does not work. Blacklist the em dash and the model hands back the same paragraph without one. A system it can check itself against holds where a list does not.
 
-**`references/frameworks/technical-clarity.md`** carries the standard. Its payload discipline is adapted from [ASD-STE100 Simplified Technical English](https://www.asd-ste100.org/), the controlled-language standard European aerospace published in 1986 so a mechanic reading a maintenance manual in a second language could not misread a repair step, plus Orwell's six rules from 1946. One name per thing. One idea per sentence. Active voice with a named actor. Verbs instead of nominalizations. Show the number instead of calling something powerful.
+**`references/frameworks/technical-clarity.md`** carries the standard. Its payload discipline is adapted from [ASD-STE100 Simplified Technical English](https://www.asd-ste100.org/), plus Orwell's six rules from 1946. STE exists because airlines asked for it: roughly 80% of them are not native English speakers, and as the standard's own documentation puts it, complex technical instructions can be misunderstood, and misunderstandings can lead to accidents. Working group formed 1983, first released 1986, still maintained. One name per thing. One idea per sentence. Active voice with a named actor. Verbs instead of nominalizations. Show the number instead of calling something powerful.
 
 The important part is the **frame and payload split**. Never run a standard like this over a whole piece, or you get something technically flawless that nobody wants to read. Your voice carries the hook, the story, and the judgment. The standard carries the passages where the reader has to understand a mechanism.
 
 **`banger-detector`** handles authenticity and disclosure. It verifies provenance and voice first, treats detector output as one weak diagnostic, and refuses the moves that damage true writing to move a number: no humanizers, no inserted typos, no filler added to raise perplexity. It also helps you write an honest disclosure of how AI was used, which is a stronger position than any score.
 
 On that last point, worth knowing: detectors measure how predictable your sentences are, and clean technical writing is predictable by design. Applying the clarity standard correctly will often *raise* your AI score while improving the writing. Liang et al. (2023, *Patterns*) found detectors falsely flagged 61.3% of essays by non-native English writers. Treat every score accordingly.
+
+**Credit where this came from.** The STE idea reached me through a public conversation on X: [@geogristle](https://x.com/geogristle/status/2078492579511906771) made the original point about requiring LLMs to follow ASD-STE100, [@Voxyz_ai](https://x.com/Voxyz_ai/status/2078857039116156978) made the broader argument that banning words one at a time fails because you never gave the model a writing system, and [@mikehostetler](https://x.com/mikehostetler/status/2079245119455150418) carried the STE answer further. [woosal1337](https://github.com/woosal1337/blog/tree/main/videos/ep01-the-cure-for-ai-slop) ran the cross-model experiment and published a linter and results. [danyuchn/asd-ste100-skill](https://github.com/danyuchn/asd-ste100-skill) shipped an STE Claude Code skill before this one. What BANGERS adds is the frame/payload split, which is what happens when you point a controlled-language standard at writing that also has to carry a voice.
 
 ## How the system learns
 
@@ -98,7 +100,9 @@ The checker is a prompt for human review. It does not prove authorship or qualit
 
 ## Credit
 
-The techniques here are studied from the public work of [Matt Pocock](https://www.mattpocock.com/), [Theo](https://www.youtube.com/@t3dotgg), and [ThePrimeagen](https://www.youtube.com/@ThePrimeagen). Go watch them, they're the real deal. BANGERS is independent and unaffiliated. It distills publicly documented *methods* into a reusable toolkit and does not reproduce their content or voices.
+The techniques here are studied from the public work of [Fireship](https://www.youtube.com/@Fireship), [Matt Pocock](https://www.mattpocock.com/), [Theo](https://www.youtube.com/@t3dotgg), and [ThePrimeagen](https://www.youtube.com/@ThePrimeagen). Go watch them, they're the real deal. BANGERS is independent and unaffiliated. It distills publicly documented *methods* into a reusable toolkit and does not reproduce their content or voices.
+
+`references/creators/` ships a playbook for each of the four, and `_synthesis.md` covers the laws they share.
 
 ## License
 
