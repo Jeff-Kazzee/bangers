@@ -85,6 +85,29 @@ git clone https://github.com/Jeff-Kazzee/bangers.git
 
 In Cowork, install a packaged `bangers.plugin` from the Releases page or build it from this repository.
 
+### Zo Computer
+
+Zo has no plugin system, but it implements [Agent Skills](https://agentskills.io/), so BANGERS ships as a single skill there. Copy `dist/zo/bangers/` into your Zo workspace at `Skills/bangers/`:
+
+```text
+Skills/
+└── bangers/
+    ├── SKILL.md              # router, ~5 KB, always in context
+    ├── references/
+    │   ├── procedures/       # the 12 procedures, loaded one at a time
+    │   ├── creators/
+    │   ├── frameworks/
+    │   ├── platforms/
+    │   └── research/
+    └── scripts/
+```
+
+The router is the only part Zo keeps loaded. Everything else loads when a request matches, which is why the twelve procedures are reference files rather than twelve separate skills. Regenerate it after changing any source skill:
+
+```text
+node scripts/build-zo-skill.mjs
+```
+
 ## Make it yours
 
 Fill in `references/frameworks/voice-and-audience.md` with the actual author, audience, and constraints. Creator-specific hard rules override generic style advice. Keep private identity, business, client, health, and financial context in a local overlay rather than committing it to this public repository.
