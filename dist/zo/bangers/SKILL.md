@@ -7,11 +7,14 @@ description: >
   technical explainers and tutorials, video edit plans and captions, repurposing one source across
   platforms, or checking whether a draft reads as AI-written and how to disclose AI use. Studies
   public creator and platform mechanics and adapts them to the author's own audience and voice.
+homepage: https://github.com/Jeff-Kazzee/bangers
+license: MIT
 metadata:
+  author: Jeff Kazzee
+  generated: scripts/build-zo-skill.mjs
+  source: https://github.com/Jeff-Kazzee/bangers
   suite: bangers
   version: "1.1.0"
-  source: https://github.com/Jeff-Kazzee/bangers
-  generated: scripts/build-zo-skill.mjs
 ---
 
 # BANGERS

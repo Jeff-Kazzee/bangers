@@ -83,6 +83,17 @@ for (const [name, when] of ORDER) {
   rows.push(`| ${when} | \`references/procedures/${name}.md\` |`);
 }
 
+// DISPLAY.json is the Zo skills registry presentation layer. Spec: DISPLAY.md
+// in github.com/zocomputer/skills. Strictly display; SKILL.md stays the source
+// of truth for identity and behavior.
+fs.writeFileSync(path.join(OUT, "DISPLAY.json"), JSON.stringify({
+  specVersion: "0.2.0",
+  icon: "megaphone",
+  tags: ["content", "marketing", "research"],
+}, null, 2) + "\n");
+
+// Frontmatter below satisfies the registry validator: `name` must match the
+// parent directory, and `description` and `metadata.author` are required.
 const skill = `---
 name: bangers
 description: >
@@ -92,11 +103,14 @@ description: >
   technical explainers and tutorials, video edit plans and captions, repurposing one source across
   platforms, or checking whether a draft reads as AI-written and how to disclose AI use. Studies
   public creator and platform mechanics and adapts them to the author's own audience and voice.
+homepage: https://github.com/Jeff-Kazzee/bangers
+license: MIT
 metadata:
+  author: Jeff Kazzee
+  generated: scripts/build-zo-skill.mjs
+  source: https://github.com/Jeff-Kazzee/bangers
   suite: bangers
   version: "1.1.0"
-  source: https://github.com/Jeff-Kazzee/bangers
-  generated: scripts/build-zo-skill.mjs
 ---
 
 # BANGERS
