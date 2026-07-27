@@ -1,5 +1,8 @@
-# PLATFORM PLAYBOOK (2025–2026)
-Current specs + rules for every platform in the BANGERS suite. Read the relevant section before producing platform-specific output. Sources dated 2025–2026; verify specs if a platform changed recently.
+# PLATFORM PLAYBOOK
+
+> Freshness status, 2026-07-25: legacy claims are unaudited. Treat every numeric benchmark, algorithm assertion, feature-availability claim, and policy statement below as a research lead, not current truth, until `references/research/source-ledger.md` contains a non-expired supporting entry. Official technical specifications should also be reverified when the platform may have changed.
+
+This file collects candidate platform mechanics for the BANGERS suite. Read the relevant section before platform-specific work, but use only currently supported claims in outward-facing advice.
 
 ## TABLE OF CONTENTS
 1. YouTube long-form · 2. YouTube Shorts · 3. TikTok · 4. Instagram (Reels + Carousels) · 5. X/Twitter · 6. LinkedIn · 7. Substack · 8. Bluesky · 9. Facebook Groups · 10. Cross-platform repurposing waterfall

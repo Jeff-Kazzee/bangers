@@ -5,14 +5,14 @@
     "url": "https://github.com/Jeff-Kazzee"
   },
   "metadata": {
-    "description": "BANGERS — a social-media content studio for creators.",
-    "version": "1.0.0"
+    "description": "BANGERS, a research-backed social-media system for creators.",
+    "version": "1.1.0"
   },
   "plugins": [
     {
       "name": "bangers",
       "source": "./",
-      "description": "Turn one idea into scroll-stopping content across every platform, built on the playbooks of Fireship, Matt Pocock, Theo, and ThePrimeagen."
+      "description": "Research creators and platforms, then turn real source material into native content with a living writing-quality gate."
     }
   ]
 }

@@ -8,7 +8,7 @@ description: >
   defensible hot-take framing, adaptable to any creator's niche. Reach for this any time the deliverable
   is text posts for X or Bluesky.
 metadata:
-  version: "0.1.0"
+  version: "0.2.0"
   suite: "bangers"
 ---
 
@@ -16,6 +16,9 @@ metadata:
 
 On X, replies are weighted ~13–27× a like and reposts ~20×; the first 15 minutes decide virality; links in the main post cut reach 50–90%. On Bluesky, conversation momentum (replies/quotes) drives the Discover feed. So: write for conversation, front-load the hook, keep links out of the lead post.
 
+## Freshness gate
+
+Before applying a platform benchmark, algorithm claim, policy, feature-availability statement, or numeric performance claim from this skill or the platform playbook, check `references/research/source-ledger.md` for non-expired support. If support is missing or past its review date, run `banger-research`, qualify the claim as unverified, or omit it. Never present a legacy value as current truth.
 ## Load first
 - `${CLAUDE_PLUGIN_ROOT}/references/creators/matt-pocock.md` (one-concept posts, curiosity-gap hooks, show-don't-tell, the evergreen mega-thread) — the primary model for teaching threads.
 - `${CLAUDE_PLUGIN_ROOT}/references/creators/theo.md` (controversial-but-defensible hot takes, steelman + verdict) — for opinion posts.
@@ -42,5 +45,8 @@ On X, replies are weighted ~13–27× a like and reposts ~20×; the first 15 min
 - Add a one-line note on best posting time / that the first-15-min reply push matters.
 - If adapting for both X and Bluesky, provide a distinct version for each.
 
+## Living writing gate
+
+Read `${CLAUDE_PLUGIN_ROOT}/references/frameworks/writing-quality.md` before drafting. Apply creator-specific constraints and treat detector results as weak evidence.
 ## Quality bar
 Confirm: post 1 stops the scroll on its own, exactly one idea per post, a real reason to reply, no link in the lead, and (for hot takes) it passes the defensibility test.

@@ -1,12 +1,12 @@
 {
   "name": "bangers",
-  "version": "1.0.0",
-  "description": "Turn one idea into scroll-stopping content across every platform. BANGERS is a full social-media content studio — scripts, threads, carousels, newsletters, hooks, titles, and edit sheets for YouTube, Shorts, TikTok, Instagram, X, LinkedIn, Substack, Bluesky, and Facebook Groups — built on the reverse-engineered playbooks of Fireship, Matt Pocock, Theo, and ThePrimeagen, and adaptable to any creator's niche.",
+  "version": "1.1.0",
+  "description": "A research-backed social-media content system for creator research, ideas, scripts, posts, packaging, editing, and native repurposing, with a living writing-quality gate.",
   "author": {
     "name": "Jeff Kazzee"
   },
   "homepage": "https://github.com/Jeff-Kazzee/bangers",
   "repository": "https://github.com/Jeff-Kazzee/bangers",
   "license": "MIT",
-  "keywords": ["social-media", "content-creation", "youtube", "shorts", "tiktok", "instagram", "video-scripts", "hooks", "thumbnails", "carousels", "newsletter", "davinci-resolve", "premiere", "capcut", "obs", "repurposing", "creator", "viral"]
+  "keywords": ["social-media", "content-creation", "creator-research", "writing-quality", "youtube", "shorts", "tiktok", "instagram", "video-scripts", "hooks", "thumbnails", "carousels", "newsletter", "editing", "repurposing", "creator"]
 }

@@ -10,7 +10,7 @@ description: >
   suite. This skill outputs instructions and files the user feeds into their editor and OBS (it does not
   drive an NLE directly).
 metadata:
-  version: "0.1.0"
+  version: "0.2.0"
   suite: "bangers"
 ---
 
@@ -18,7 +18,12 @@ metadata:
 
 This skill turns a script or a raw recording into the assets an editor actually needs: a cut plan, caption files, markers, and overlay cues — usable in **DaVinci Resolve, Adobe Premiere, CapCut, or Descript**, with **OBS** for recording. It produces text/files the user imports; it doesn't run the NLE. Ask (or infer from context) which editor the user works in, and tailor the import notes to it.
 
+## Freshness gate
+
+Before applying a platform benchmark, algorithm claim, policy, feature-availability statement, or numeric performance claim from this skill or the platform playbook, check `references/research/source-ledger.md` for non-expired support. If support is missing or past its review date, run `banger-research`, qualify the claim as unverified, or omit it. Never present a legacy value as current truth.
 ## Load first
+- `${CLAUDE_PLUGIN_ROOT}/references/frameworks/writing-quality.md` for captions, overlays, title cards, and any corrected transcript text.
+
 - `${CLAUDE_PLUGIN_ROOT}/references/creators/fireship.md` (the editing DNA: zero dead air, visual change every 1–5s, reveal step-by-step, pointer on the live element, cheap assets + precise timing) + `${CLAUDE_PLUGIN_ROOT}/references/creators/primeagen.md` (clip the emotional spikes).
 - `${CLAUDE_PLUGIN_ROOT}/references/platforms/platform-playbook.md` (specs + safe zones for the target platform; §10 for the film-once-cut-everywhere reframe rules).
 

@@ -7,7 +7,7 @@ description: >
   "slide deck" for social. Part of the BANGERS suite; applies one-idea-per-slide clarity and strong-first-slide
   packaging. Reach for this any time the deliverable is a multi-slide swipeable/scrollable visual post.
 metadata:
-  version: "0.1.0"
+  version: "0.2.0"
   suite: "bangers"
 ---
 
@@ -15,7 +15,11 @@ metadata:
 
 Carousels are the highest engagement-by-reach format on Instagram and a top-reach format on LinkedIn, and they earn SAVES (a heavily weighted signal). The craft: one idea per slide, a slide 1 that stops the scroll, and a last slide that earns the save/share.
 
+## Freshness gate
+
+Before applying a platform benchmark, algorithm claim, policy, feature-availability statement, or numeric performance claim from this skill or the platform playbook, check `references/research/source-ledger.md` for non-expired support. If support is missing or past its review date, run `banger-research`, qualify the claim as unverified, or omit it. Never present a legacy value as current truth.
 ## Load first
+- `${CLAUDE_PLUGIN_ROOT}/references/frameworks/writing-quality.md` for the living human-writing test and creator-specific constraints. Treat detector results as weak evidence.
 - `${CLAUDE_PLUGIN_ROOT}/references/frameworks/voice-and-audience.md` (the creator's own defined audience — ask once if it isn't set) + `${CLAUDE_PLUGIN_ROOT}/references/creators/matt-pocock.md` (one concept, example-first, make-the-invisible-visible).
 - `${CLAUDE_PLUGIN_ROOT}/references/platforms/platform-playbook.md` §4 (Instagram carousels — 8–10 slides, 4:5 1080×1350, strong slide 1 AND 2 for the re-serve) and §6 (LinkedIn document carousels — 5–10 slides, PDF, 1080×1080 or 1080×1350).
 
