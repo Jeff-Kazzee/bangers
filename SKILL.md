@@ -27,7 +27,9 @@ In Claude's plugin runtime, `${CLAUDE_PLUGIN_ROOT}` is supplied automatically. I
 | LinkedIn, Substack, newsletter, or Facebook Group post | `skills/banger-longform-written/SKILL.md` |
 | Instagram or LinkedIn carousel | `skills/banger-carousels/SKILL.md` |
 | Cut sheet, captions, markers, reframe, or recording plan | `skills/banger-edit/SKILL.md` |
+| Technical explainer, tutorial, build log, or how-it-works teaching content | `skills/banger-explainer/SKILL.md` |
 | One source adapted to several platforms | `skills/banger-repurpose/SKILL.md` |
+| AI detector check, authenticity verification, or AI-use disclosure | `skills/banger-detector/SKILL.md` |
 
 ## Suite rules
 
@@ -36,7 +38,8 @@ In Claude's plugin runtime, `${CLAUDE_PLUGIN_ROOT}` is supplied automatically. I
 3. Research updates need dated sources, observed examples, a confidence label, and a reusable mechanic. One viral post does not establish a law. Treat platform claims without a current, non-expired source-ledger entry as unverified and research them before use.
 4. Borrow mechanics, not phrasing, identity, signature jokes, or a creator's imitation voice.
 5. Adapt every output to its native platform. Do not paste identical copy everywhere.
-6. Detector results are weak adversarial evidence. Revise only when a highlighted passage exposes a real defect.
+6. Detector results are weak adversarial evidence. Revise only when a highlighted passage exposes a real defect. Never damage a true, clear passage to move a score, and never advertise that output passes AI detection. Route detector and disclosure work through `skills/banger-detector/SKILL.md`.
+7. When a piece teaches a mechanism the reader must repeat, read `references/frameworks/technical-clarity.md` and apply the frame/payload split.
 7. Keep public methods free of private client, identity, health, financial, or unpublished business context.
 
 Lead with the strongest ready-to-use asset. Include only the evidence assumptions, platform notes, and approval needed next.
