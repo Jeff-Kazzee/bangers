@@ -71,8 +71,11 @@ Claude Code marketplace:
 
 ```text
 /plugin marketplace add Jeff-Kazzee/bangers
-/plugin install bangers
+/plugin install bangers@bangers
 ```
+
+The `@bangers` suffix is the marketplace name, which happens to match the plugin
+name here. Both parts are required.
 
 Or clone the repository and use its root `SKILL.md` as the tool-neutral router:
 
